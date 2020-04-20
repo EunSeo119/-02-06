@@ -22,7 +22,7 @@ def func_zoom() :
     pLabel.image = photo
 
 def func_subsample() :
-    value = askinteger("축소배수", "축소할 배수를 입력하세요(2~8)", minvalue =1, maxvalue = 10)
+    value = askinteger("축소배수", "축소할 배수를 입력하세요(2~8)", minvalue =2, maxvalue = 8)
     photo = PhotoImage(file = filename)
     photo = photo.subsample(value, value)
     pLabel.configure(image = photo)
